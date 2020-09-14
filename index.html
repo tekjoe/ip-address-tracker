@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+    <script src="./scripts/main.js" defer></script>
+    <title>Frontend Mentor | IP Address Tracker</title>
+  </head>
+  <body>
+    <main>
+      <div class="desktop-preview">
+        <header class="header">
+          <div class="container">
+            <div class="title"><h1>IP Address Tracker</h1></div>
+            <form class="form">
+              <div class="input-group">
+                <input
+                  type="text"
+                  placeholder="Search for any IP address or domain"
+                  id="ipAddress"
+                />
+                <button type="submit" id="submit">
+                  <img src="./images/icon-arrow.svg" alt="Chevron Right" />
+                </button>
+              </div>
+            </form>
+            <div class="results">
+              <div class="result">
+                <div class="title"><p>IP Address</p></div>
+                <div class="data">
+                  <span class="skeleton"></span>
+                  <p id="ip"></p>
+                </div>
+              </div>
+              <div class="result">
+                <div class="title"><p>Location</p></div>
+                <div class="data">
+                  <span class="skeleton"></span>
+                  <p id="location"></p>
+                </div>
+              </div>
+              <div class="result">
+                <div class="title"><p>Timezone</p></div>
+                <div class="data">
+                  <span class="skeleton"></span>
+                  <p id="timezone"></p>
+                </div>
+              </div>
+              <div class="result">
+                <div class="title"><p>ISP</p></div>
+                <div class="data">
+                  <span class="skeleton"></span>
+                  <p id="isp"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+        <section class="map" id="map"></section>
+      </div>
+    </main>
+  </body>
+</html>
