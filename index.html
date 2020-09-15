@@ -27,56 +27,54 @@
   </head>
   <body>
     <main>
-      <div class="desktop-preview">
-        <header class="header">
-          <div class="container">
-            <div class="title"><h1>IP Address Tracker</h1></div>
-            <form class="form">
-              <div class="input-group">
-                <input
-                  type="text"
-                  placeholder="Search for any IP address or domain"
-                  id="ipAddress"
-                />
-                <button type="submit" id="submit">
-                  <img src="./images/icon-arrow.svg" alt="Chevron Right" />
-                </button>
+      <header class="header">
+        <div class="container">
+          <div class="title"><h1>IP Address Tracker</h1></div>
+          <form class="form">
+            <div class="input-group">
+              <input
+                type="text"
+                placeholder="Search for any IP address or domain"
+                id="ipInput"
+              />
+              <button type="submit" id="submit">
+                <img src="./images/icon-arrow.svg" alt="Chevron Right" />
+              </button>
+            </div>
+          </form>
+          <div class="results">
+            <div class="result">
+              <div class="title"><p>IP Address</p></div>
+              <div class="data">
+                <span class="skeleton"></span>
+                <p id="ip"></p>
               </div>
-            </form>
-            <div class="results">
-              <div class="result">
-                <div class="title"><p>IP Address</p></div>
-                <div class="data">
-                  <span class="skeleton"></span>
-                  <p id="ip"></p>
-                </div>
+            </div>
+            <div class="result">
+              <div class="title"><p>Location</p></div>
+              <div class="data">
+                <span class="skeleton"></span>
+                <p id="location"></p>
               </div>
-              <div class="result">
-                <div class="title"><p>Location</p></div>
-                <div class="data">
-                  <span class="skeleton"></span>
-                  <p id="location"></p>
-                </div>
+            </div>
+            <div class="result">
+              <div class="title"><p>Timezone</p></div>
+              <div class="data">
+                <span class="skeleton"></span>
+                <p id="timezone"></p>
               </div>
-              <div class="result">
-                <div class="title"><p>Timezone</p></div>
-                <div class="data">
-                  <span class="skeleton"></span>
-                  <p id="timezone"></p>
-                </div>
-              </div>
-              <div class="result">
-                <div class="title"><p>ISP</p></div>
-                <div class="data">
-                  <span class="skeleton"></span>
-                  <p id="isp"></p>
-                </div>
+            </div>
+            <div class="result">
+              <div class="title"><p>ISP</p></div>
+              <div class="data">
+                <span class="skeleton"></span>
+                <p id="isp"></p>
               </div>
             </div>
           </div>
-        </header>
-        <section class="map" id="map"></section>
-      </div>
+        </div>
+      </header>
+      <section class="map" id="map"></section>
     </main>
   </body>
 </html>
